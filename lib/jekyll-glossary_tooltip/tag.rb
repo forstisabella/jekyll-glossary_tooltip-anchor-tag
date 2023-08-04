@@ -18,7 +18,7 @@ module Jekyll
         <<~HTML
           <span class="jekyll-glossary">
              #{@opts[:display]}
-             <span class="jekyll-glossary-tooltip">#{entry["definition"]}#{render_tooltip_url(entry, context)}</span>
+             <a class="jekyll-glossary-tooltip">#{entry["definition"]}#{render_tooltip_url(entry, context)}</a>
           </span>
         HTML
       end
